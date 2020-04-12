@@ -73,8 +73,8 @@ func main() {
 
 	/** 启动web服务，监听1010端口 **/
 	go func() {
-		log.Println("ListenAndServe at:172.30.60.194:1010")
-		err := http.ListenAndServe("172.30.60.194:1010", nil)
+		log.Println("ListenAndServe at:192.168.60.194:1010")
+		err := http.ListenAndServe("192.168.60.194:1010", nil)
 		if err != nil {
 			log.Fatal("ListenAndServe: ", err)
 		}
